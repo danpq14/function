@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="input">
+<button onclick="checkstar()">check it</button>
+<script>
+    function checkstar() {
+        word = document.getElementById('input').value ;
+        let star=['polaris','aldebaran','deneb','vega','altair','dubhe','regulus'];
+        let constell=['ursa minor','tarurus','cygnus','lyra','aquila','ursa major','leo'];
+        let text;
+        let flag=false;
+        for (i=0;i<star.length;i++) {
+            if (star[i]==word) {
+                text = constell[i];
+                flag = true;
+                break;
+            }
+            }
+        if (flag==true) {
+            console.log(text);
+        } else {
+            console.log('ko tìm thấy');
+        }
+
+    }
+</script>
+</body>
+</html>

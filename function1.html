@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function processConfirm(answer) { //tạo 1 hàm
+        let result = "";
+        if (answer) {
+            result = "Excellent. We'll play a nice game of chess.";
+        } else {
+            result = "Maybe later then.";
+        }
+        return result;
+    }
+
+    let confirmAnswer = confirm("Shall we play a game?");//lấy giá trị của biến
+    let theAnswer = processConfirm(confirmAnswer);//lắp giá trị của biến vào hàm
+    alert(theAnswer);//trả về kết quả
+
+</script>
+</body>
+</html>

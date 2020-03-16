@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi giữa mét và feet</title>
+</head>
+<body>
+<h1>Hàm chuyển đổi độ dài</h1>
+<br>
+<hr>
+<br>
+<br>
+<input type="text" id="input" oninput="convert(this.value)">
+<select value="unit">
+    <option value="meter" id="meter">m</option>
+    <option value="feet" id="feet">ft</option>
+</select>
+<br>
+<br>
+<p id="result">Result</p>
+<script>
+    function convert(number) {
+        if (unit === meter) {
+            document.getElementById('result').innerHTML = + '=' + (number*3.279) +'ft'
+        } else (unit === feet)
+        document.getElementById('result').innerHTML = + '=' + (number*0.305) +'m'
+    }
+
+</script>
+</body>
+</html>
