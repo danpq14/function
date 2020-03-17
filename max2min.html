@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function max2min(array) {
+        let s;
+        for (i=0;i<array.length;i++) {
+            for (j=0;j<array.length-i;j++) {
+                if (array[j]<array[j+1]) {
+                    s=array[j+1];
+                    array[j+1] = array[j];
+                    array[j]=s;
+                }
+            }
+        } console.log(array);
+
+    }
+    let dan=[1,3,2,5,7,6,8,13,22,14,17,15];
+    console.log(max2min(dan));
+
+
+</script>
+</body>
+</html>
+
+</body>
+</html>
